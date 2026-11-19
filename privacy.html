@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité · L17 Sakura</title>
+<link rel="icon" href="icon.png">
+<style>
+  :root { --bg: #160d1a; --card: #22152a; --line: #3a2443; --fg: #fbe9f1; --muted: #c9a9bb; --acc: #f58bb4; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif; padding: 40px 16px; }
+  main { max-width: 760px; margin: 0 auto; }
+  h1 { font-size: clamp(26px, 5vw, 34px); letter-spacing: -.02em; margin: 0 0 4px; }
+  .date { color: var(--muted); margin: 0 0 24px; }
+  section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 22px; margin-bottom: 14px; }
+  h2 { margin: 0 0 6px; font-size: 18px; color: var(--acc); }
+  ul { margin: 6px 0 0; padding-left: 20px; }
+  a { color: var(--acc); }
+  code { background: #ffffff14; padding: 1px 6px; border-radius: 6px; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← L17 Sakura</a></p>
+  <h1>Règles de confidentialité</h1>
+  <p class="date">Dernière mise à jour : 19 novembre 2026</p>
+
+  <section>
+    <h2>Résumé</h2>
+    <p>L17 Sakura est une application de bureau. Elle n’a pas de serveur : tout ce qu’elle lit de ton compte Google reste sur ton ordinateur.
+    Rien n’est vendu, partagé, ni envoyé à quelqu’un d’autre que Google lui-même.</p>
+  </section>
+
+  <section>
+    <h2>Ce à quoi l’application accède</h2>
+    <p>Uniquement si tu connectes ton compte Google, et seulement avec l’autorisation <code>https://www.googleapis.com/auth/youtube.readonly</code> (lecture seule) :</p>
+    <ul>
+      <li>le nom de ta chaîne YouTube, affiché dans les réglages de l’application ;</li>
+      <li>la liste de tes playlists YouTube et le contenu de ces playlists (titres, artistes, miniatures, identifiants des vidéos) ;</li>
+      <li>ta playlist « J’aime ».</li>
+    </ul>
+    <p>L’application ne publie rien, ne modifie rien, ne supprime rien, et n’accède à aucune autre donnée Google (e-mails, fichiers, contacts…).</p>
+  </section>
+
+  <section>
+    <h2>Comment ces données sont utilisées</h2>
+    <ul>
+      <li>Elles servent seulement à afficher tes playlists dans l’application et à lancer les titres que tu choisis.</li>
+      <li>Elles sont demandées à Google au moment où tu ouvres tes playlists, et ne sont pas gardées ensuite.</li>
+      <li>Elles ne sont jamais envoyées à un serveur du développeur ni à un tiers. Il n’y a pas de publicité, pas de statistiques, pas de pistage.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Stockage et sécurité</h2>
+    <ul>
+      <li>La connexion se fait dans ton propre navigateur, sur la page officielle de Google : l’application ne voit jamais ton mot de passe.</li>
+      <li>Le jeton d’accès que Google donne est enregistré uniquement sur ton ordinateur, chiffré par le système (Windows ou macOS).</li>
+      <li>Les échanges avec Google passent par des connexions chiffrées (HTTPS).</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Retirer l’accès</h2>
+    <ul>
+      <li>Dans l’application : Réglages → Compte Google → <b>Se déconnecter</b>. Le jeton est révoqué auprès de Google et effacé de l’ordinateur.</li>
+      <li>À tout moment depuis ton compte Google : <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Services Google</h2>
+    <p>L’application utilise les services d’API YouTube. En les utilisant, tu acceptes les
+    <a href="https://www.youtube.com/t/terms">conditions d’utilisation de YouTube</a>, et les données sont traitées selon les
+    <a href="https://policies.google.com/privacy">règles de confidentialité de Google</a>.
+    L’utilisation des données reçues des API Google respecte le <a href="https://developers.google.com/terms/api-services-user-data-policy">règlement relatif aux données utilisateur des services API Google</a>, y compris les exigences d’utilisation limitée.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Pour toute question, ouvre une demande sur <a href="https://github.com/SaYiiTo21/l17-sakura/issues">la page GitHub du projet</a>.</p>
+  </section>
+</main>
+</body>
+</html>
